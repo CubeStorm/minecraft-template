@@ -17,7 +17,7 @@ export const MobileNavBar: React.FC = () => {
             onClick={() => dispatch(toggleActive(false))}
         >
             <div
-                className="bg-background rounded-md shadow-sm p-5"
+                className="max-w-lg bg-background rounded-md shadow-sm mx-auto p-5"
                 onClick={event => event.stopPropagation()}
             >
                 <div className="flex items-center justify-between mb-4">
