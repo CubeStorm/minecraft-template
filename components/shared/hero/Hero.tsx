@@ -4,6 +4,7 @@ import { Canvas } from '@react-three/fiber';
 import { useLoader, useFrame } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { Button } from '../Button';
+import Image from 'next/image';
 
 
 function Scene() {
@@ -66,7 +67,7 @@ export const Hero: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="relative lg:w-1/2">
+                <div className="lg:w-1/2 flex justify-center">
                     {/* <Canvas>
                         <Suspense fallback={null}>
                             <ambientLight />
@@ -74,7 +75,13 @@ export const Hero: React.FC = () => {
                         </Suspense>
                     </Canvas> */}
 
-                    <img src="/img/render.png" alt="Render" className="relative z-0" />
+                    <Image
+                        src="/img/render.png"
+                        alt="Minecraft Render"
+                        width={520}
+                        height={520}
+                        className="mx-auto"
+                    />
                 </div>
             </div>
         </header>
