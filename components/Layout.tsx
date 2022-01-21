@@ -2,6 +2,7 @@ import * as React from 'react';
 import { ReactNode } from 'react';
 
 import { Nav } from '@components/shared/nav/Nav';
+import { Footer } from '@components/shared/footer/Footer';
 
 
 interface LayoutProps {
@@ -17,7 +18,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 {children}
             </main>
 
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }

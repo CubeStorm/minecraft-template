@@ -53,11 +53,13 @@ export const Hero: React.FC = () => {
                                 WERSJA: 1.18.2
                             </p>
                         </div>
+
                         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-text sm:text-4xl sm:leading-none">
                             Dołącz do nas
                             <br className="hidden md:block" />
                             i baw się razem z nami
                         </h2>
+
                         <p className="text-base text-gray-700 md:text-lg">
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa

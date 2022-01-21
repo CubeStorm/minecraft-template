@@ -13,9 +13,9 @@ export const Logo: React.FC = () => {
                 title={APP_NAME}
                 className="items-center mr-8"
             >
-                <span className="text-xl text-text font-bold tracking-wide uppercase ml-2">
+                <h1 className="text-xl text-text font-bold tracking-wide uppercase ml-2">
                     {APP_NAME}
-                </span>
+                </h1>
             </a>
         </Link>
     );
