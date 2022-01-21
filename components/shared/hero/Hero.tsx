@@ -1,18 +1,24 @@
 import * as React from 'react';
-import { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
+import { useState, useRef } from 'react';
 import { useLoader, useFrame } from '@react-three/fiber'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import { Button } from '../Button';
-import Image from 'next/image';
 
+import Image from 'next/image';
+import { Button } from '@components/shared/Button';
+
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+
+import type { MeshRefType } from '@ctypes/MeshRefType';
+
+
+import { Canvas } from '@react-three/fiber';
+import { Suspense } from 'react';
 
 function Scene() {
-    const [scale, setScale] = React.useState(1.72);
+    const [scale, setScale] = useState(1.72);
 
     const gltf = useLoader(GLTFLoader, '/img/crying_obsidian.gltf');
 
-    const meshRef = React.useRef(null);
+    const meshRef = useRef<MeshRefType>(null);
 
     useFrame(({ clock }) => {
         if (meshRef.current) {
