@@ -17,10 +17,10 @@
     "baseUrl": ".",
       "paths": {
         "@components/*": ["components/*"],
+        "@redux/*": ["redux/*"],
         "@styles/*": ["styles/*"],
         "@ctypes/*": ["types/*"],
-        "@validation/*": ["validation/*"],
-        "@redux/*": ["redux/*"]
+        "@validation/*": ["validation/*"]
       }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
