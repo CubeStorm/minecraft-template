@@ -3,6 +3,7 @@ import { ReactNode } from 'react';
 
 import { Nav } from '@components/shared/nav/Nav';
 import { Footer } from '@components/shared/footer/Footer';
+import { Alerts } from '@components/shared/alerts/Alerts';
 
 
 interface LayoutProps {
@@ -19,6 +20,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </main>
 
             <Footer />
+
+            <Alerts />
         </div>
     )
 }

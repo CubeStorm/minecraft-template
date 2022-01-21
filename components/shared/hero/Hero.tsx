@@ -12,6 +12,8 @@ import type { MeshRefType } from '@ctypes/MeshRefType';
 
 import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react';
+import { useAppDispatch } from '@redux/hooks';
+import { create } from '@redux/slices/AlertsSlice';
 
 function Scene() {
     const [scale, setScale] = useState(1.72);
@@ -43,6 +45,18 @@ function Scene() {
 }
 
 export const Hero: React.FC = () => {
+    const dispatch = useAppDispatch();
+
+    const handleCopy = () => {
+        navigator.clipboard.writeText(process.env.NEXT_PUBLIC_SERVER_IP ?? '');
+
+        dispatch(create({
+            id: Math.floor(Math.random() * 999999),
+            title: 'Adres IP został skopiowany',
+            content: 'Możesz go teraz wkleić za pomocą CTRL+V'
+        }));
+    }
+
     return (
         <header className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto px-4 md:px-24 lg:px-8">
             <div className="flex flex-col items-center justify-between lg:flex-row mt-6 lg:mt-0">
@@ -71,6 +85,7 @@ export const Hero: React.FC = () => {
                         <Button
                             title="Skupiuj Adres IP"
                             ariaLabel="Skopiuj adres ip serwera"
+                            handleClick={handleCopy}
                         />
                     </div>
                 </div>

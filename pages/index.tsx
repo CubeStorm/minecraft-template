@@ -9,7 +9,7 @@ import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
     return (
-        <div className="w-full h-[2000px]">
+        <div className="w-full">
             <Hero />
 
             <About />
