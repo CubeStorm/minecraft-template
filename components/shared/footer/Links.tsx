@@ -9,16 +9,21 @@ export const Links: React.FC = () => {
             <AdditionalLink
                 name="Regulamin"
                 path="/regulamin"
+                ariaLabel="Przekierowanie do regulaminu"
             />
 
             <AdditionalLink
                 name="Faq"
                 path="/faq"
+                ariaLabel="Przekierowanie do faq"
             />
 
             <AdditionalLink
                 name="Autor"
-                path="/"
+                path="https://www.mpcforum.pl/topic/1670271-twoja-wlasna-strona-www/"
+                ariaLabel="Przekierowanie do twórcy strony"
+                passHref={true}
+                target="_blank"
             />
         </ul>
     );
