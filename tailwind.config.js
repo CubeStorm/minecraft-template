@@ -7,7 +7,7 @@ module.exports = {
         extend: {
             colors: {
                 background: '#000000',
-                backgroundSecondary: '#111111',
+                backgroundSecondary: '#000111',
                 backgroundOverlay: 'rgba(0, 0, 0, 0.5)',
                 text: '#f3f4f6',
                 primary: {
