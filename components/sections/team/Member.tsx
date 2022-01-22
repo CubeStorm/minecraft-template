@@ -11,14 +11,14 @@ interface MemberProps {
 
 export const Member: React.FC<MemberProps> = ({ name, nick, rank }) => {
     return (
-        <div className="flex flex-col items-center">
+        <div className="group flex flex-col items-center cursor-pointer">
             <Image
                 src={`https://minotar.net/avatar/${nick}`}
                 width={72}
                 height={72}
                 alt={nick}
                 title={nick}
-                className="mb-2 rounded-sm shadow"
+                className="group-hover:scale-[0.90] group-active:scale-[1.10] transition-transform rounded-sm shadow mb-2"
             />
 
             <div className="flex flex-col items-center mt-2">
