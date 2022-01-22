@@ -6,6 +6,7 @@ import Layout from '@components/Layout';
 import { store } from '@redux/store';
 
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import '@styles/global.css';
 import '@styles/tailwind.css';
 import '@styles/button.css';
 
