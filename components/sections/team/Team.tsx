@@ -14,7 +14,7 @@ export const Team: React.FC = () => {
                     description="Jeśli potrzebujesz pomocy lub czujesz potrzebę, aby nam o czymś powiedzieć nie wahaj się! Kliknij w główkę wybranego administratora, aby się z nim skontaktować"
                 />
 
-                <div className="lg:max-w-screen-lg grid gap-10 sm:grid-cols-2 lg:grid-cols-5 mx-auto">
+                <div className="lg:max-w-screen-lg grid gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mx-auto">
                     <Member
                         name="Jan Kowalski"
                         nick="CubeStorm"
@@ -22,7 +22,7 @@ export const Team: React.FC = () => {
                     />
 
                     <Member
-                        name="Jan Kowalski"
+                        name="Michał pierdziduoa"
                         nick="CubeStorm"
                         rank="Web Developer"
                     />
