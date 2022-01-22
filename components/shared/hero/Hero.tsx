@@ -58,8 +58,8 @@ export const Hero: React.FC = () => {
     }
 
     return (
-        <header className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto px-4 md:px-24 lg:px-8">
-            <div className="flex flex-col items-center justify-between lg:flex-row mt-6 lg:mt-0">
+        <header className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl relative mx-auto px-4 md:px-24 lg:px-8">
+            <div className="flex flex-col lg:flex-row items-center justify-between mt-6 lg:mt-0">
                 <div className="mb-3 lg:max-w-lg lg:pr-5 lg:mb-0">
                     <div className="max-w-xl mb-6">
                         <div>
@@ -93,8 +93,8 @@ export const Hero: React.FC = () => {
                 <div className="lg:w-1/2 flex justify-center">
                     {/* <Canvas>
                         <Suspense fallback={null}>
-                            <ambientLight />
-                            <Scene />
+                        <ambientLight />
+                        <Scene />
                         </Suspense>
                     </Canvas> */}
 
@@ -103,7 +103,7 @@ export const Hero: React.FC = () => {
                         alt="Minecraft Render"
                         width={520}
                         height={520}
-                        className="mx-auto"
+                        className="mx-auto z-10"
                     />
                 </div>
             </div>

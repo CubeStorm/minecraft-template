@@ -14,7 +14,7 @@ export const Title: React.FC<TitleProps> = ({ title, description }) => {
             </h3>
 
             {description && (
-                <p className="text-sm lg:text-base text-gray-600">
+                <p className="text-sm lg:text-base text-gray-500">
                     {description}
                 </p>
             )}
