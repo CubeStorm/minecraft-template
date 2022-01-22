@@ -14,8 +14,8 @@ export const Member: React.FC<MemberProps> = ({ name, nick, rank }) => {
         <div className="group flex flex-col items-center cursor-pointer">
             <Image
                 src={`https://minotar.net/avatar/${nick}`}
-                width={72}
-                height={72}
+                width={64}
+                height={64}
                 alt={nick}
                 title={nick}
                 className="group-hover:scale-[0.90] group-active:scale-[1.10] transition-transform rounded-sm shadow mb-2"
