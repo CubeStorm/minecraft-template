@@ -38,7 +38,7 @@ export const About: React.FC = () => {
                         </div>
 
                         <div className="lg:w-1/2 flex justify-center">
-                            <p className="max-w-[500px] text-lg text-text text-center">
+                            <p className="max-w-[500px] md:text-lg text-text text-center">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                                 accusantium doloremque rem aperiam, eaque ipsa quae. Lorem ipsum
                                 dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
