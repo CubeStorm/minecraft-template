@@ -25,7 +25,7 @@ export const QuestionForm: React.FC = () => {
                 }}
             >
                 {({ values, handleChange, handleBlur, handleSubmit }) => (
-                    <Form className="w-full flex flex-col items-center gap-3 -mt-10 md:-mt-15 lg:-mt-20 lg:p-4">
+                    <Form className="w-full flex flex-col items-center gap-3 -mt-10 md:-mt-15 lg:p-4">
                         <div className="w-full flex flex-wrap justify-center items-center">
                             <div className="w-1/2 min-w-[250px] p-2">
                                 <InputText
@@ -72,8 +72,15 @@ export const QuestionForm: React.FC = () => {
                 )}
             </Formik>
 
-            <div className="w-full text-center border-t border-gray-200 p-2">
-                <a className="text-indigo-500">example@email.com</a>
+            <div className="w-full flex flex-col justify-center items-center text-center border-t border-gray-200 py-2">
+                <span className="text-sm text-text">Wiadomość wysyłasz na adres</span>
+
+                <a
+                    href="mailto:info@lorem.mail"
+                    aria-label="Wyślij wiadomość na email"
+                    title="Wyślij wiadomość na email"
+                    className="text-sm text-indigo-500"
+                >info@lorem.mail</a>
             </div>
         </>
     );
