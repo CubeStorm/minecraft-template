@@ -8,7 +8,7 @@ interface TitleProps {
 
 export const Title: React.FC<TitleProps> = ({ title, description }) => {
     return (
-        <div className="max-w-xl lg:max-w-2xl text-center mb-8 md:mb-5 md:mx-auto">
+        <div className="max-w-xl lg:max-w-2xl text-center mb-12 md:mx-auto">
             <h3 className="max-w-lg text-3xl sm:text-4xl text-text font-bold tracking-tight mb-4 md:mx-auto">
                 {title}
             </h3>
