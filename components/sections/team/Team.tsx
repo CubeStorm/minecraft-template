@@ -7,7 +7,7 @@ import { Member } from '@components/sections/team/Member';
 
 export const Team: React.FC = () => {
     return (
-        <section className="w-full mx-auto py-6 lg:py-8 px-4 md:px-24 lg:px-8">
+        <section className="w-full">
             <Container>
                 <Title
                     title="Doświadczony Zespół"
