@@ -32,7 +32,7 @@ export const LoginModal: React.FC = () => {
             <div className="bg-backgroundSecondary w-11/12 md:max-w-md mx-auto rounded shadow-lg z-40 overflow-y-auto">
                 <div className="text-left p-2 md:p-4 lg:p-6">
                     <div className="flex justify-between items-center">
-                        <p className="text-2xl text-text font-bold mb-4">Logowanie</p>
+                        <p className="text-lg md:text-2xl text-text font-bold mb-4 ml-2">Logowanie</p>
 
                         <div
                             className="cursor-pointer z-50 ml-auto"

@@ -4,8 +4,10 @@ import { useAppDispatch } from '@redux/hooks';
 import { Close } from '@components/shared/nav/Close';
 import { Logo } from '@components/shared/nav/Logo';
 import { NavBar } from '@components/shared/nav/NavBar';
+import { Button } from '@components/shared/Button';
 
 import { toggleActive } from '@redux/slices/NavigationSlice';
+import { toggleActive as toggleActiveLoginModal } from '@redux/slices/LoginModalSlice';
 
 
 export const MobileNavBar: React.FC = () => {
@@ -32,6 +34,15 @@ export const MobileNavBar: React.FC = () => {
 
                 <ul className="space-y-4">
                     <NavBar mobile={true} />
+
+                    <li>
+                        <Button
+                            title="Zaloguj"
+                            ariaLabel="Logowanie do konta gracza"
+                            styles="min-w-full mt-5"
+                            handleClick={() => dispatch(toggleActiveLoginModal(true))}
+                        />
+                    </li>
                 </ul>
             </div>
         </div>
