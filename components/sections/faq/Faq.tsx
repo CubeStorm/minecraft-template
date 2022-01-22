@@ -14,7 +14,7 @@ export const Faq: React.FC = () => {
                     description="Aby nie tracić czasu na odpowiadanie w kółko na te same pytania przygotowaliśmy dla Was listę najpopularniejszych pytań wraz z odpowiedziami. Jeśli nie znalazłeś rozwiązania na swój problem możesz napisać do nas osobną wiadomość poprzez wypełnienie formularza na samym dole"
                 />
 
-                <div className="lg:max-w-screen-lg flex flex-col items-center gap-10">
+                <div className="lg:max-w-screen-lg flex flex-col items-center gap-10 mx-auto">
                     <div className="max-w-xl lg:max-w-2xl flex flex-col items-center">
                         <div className="w-full lg:w-[768px] space-y-4">
                             <Item title="The quick, brown fox jumps over a lazy dog?">

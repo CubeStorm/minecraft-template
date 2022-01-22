@@ -10,7 +10,7 @@ export const Item: React.FC<ItemProps> = ({ title, children }) => {
     const [isActive, setIsActive] = useState(false);
 
     return (
-        <div className={`w-full border-b overflow-y-hidden`}>
+        <div className={`w-full border-b ${isActive ? 'border-b-primary-200' : 'border-b-text'} transition-colors overflow-y-hidden`}>
             <button
                 type="button"
                 aria-label="Pokaż odpowiedź"

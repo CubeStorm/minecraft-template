@@ -29,7 +29,7 @@ export const VoucherModal: React.FC = () => {
                 onClick={() => dispatch(toggleActive(false))}
             ></div>
 
-            <div className="bg-background w-11/12 md:max-w-md mx-auto rounded shadow-lg z-40 overflow-y-auto">
+            <div className="bg-backgroundSecondary w-11/12 md:max-w-md mx-auto rounded shadow-lg z-40 overflow-y-auto">
                 <div className="text-left p-2 md:p-4 lg:p-6">
                     <div className="flex justify-between items-center">
                         <p className="text-2xl text-text font-bold mb-4">Wykorzystaj Voucher</p>
@@ -59,7 +59,7 @@ export const VoucherModal: React.FC = () => {
                         }}
                     >
                         {({ values, handleChange, handleBlur, handleSubmit }) => (
-                            <Form className="flex flex-col gap-3 p-4 lg:p-10">
+                            <Form className="flex flex-col gap-3 p-4 lg:p-8">
                                 <InputText
                                     name="nick"
                                     value={values.nick}

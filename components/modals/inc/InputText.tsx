@@ -29,7 +29,7 @@ export const InputText: React.FC<InputTextProps> = ({
                 name={name}
                 value={value}
                 autoComplete="off"
-                className="w-full h-10 flex items-center bg-black text-text border-b-2 border-b-primary-300 focus:border-b-primary-100 focus:outline-none my-2 px-2"
+                className="w-full h-10 flex items-center bg-backgroundSecondary text-text border-b-2 border-b-primary-300 focus:border-b-primary-100 focus:outline-none my-2 px-2"
                 onChange={event => handleChange(event)}
                 onBlur={event => handleBlur(event)}
             />
