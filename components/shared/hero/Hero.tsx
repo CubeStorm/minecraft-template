@@ -103,6 +103,7 @@ export const Hero: React.FC = () => {
                         alt="Minecraft Render"
                         width={520}
                         height={520}
+                        priority
                         className="mx-auto z-10"
                     />
                 </div>
