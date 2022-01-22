@@ -7,7 +7,7 @@ import { faInfoCircle, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import { remove } from '@redux/slices/AlertsSlice';
 
-import { AlertType } from '@ctypes/features/AlertType';
+import type { AlertType } from '@ctypes/features/AlertType';
 
 
 interface AlertProps extends AlertType { };

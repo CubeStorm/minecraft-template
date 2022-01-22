@@ -11,12 +11,13 @@ interface ButtonProps {
 export const Button: React.FC<ButtonProps> = ({ title, ariaLabel, styles, handleClick = () => console.log('Nothing happened...') }) => {
     return (
         <button
+            type="button"
             aria-label={ariaLabel}
             title={ariaLabel}
             onClick={handleClick}
             className={`btn rounded-sm px-5 py-2 ${styles}`}
         >
-            <span> {title} </span>
+            <span>{title}</span>
         </button>
     );
 }

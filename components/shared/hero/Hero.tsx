@@ -1,19 +1,19 @@
 import * as React from 'react';
 import { useState, useRef } from 'react';
 import { useLoader, useFrame } from '@react-three/fiber'
+import { useAppDispatch } from '@redux/hooks';
 
 import Image from 'next/image';
 import { Button } from '@components/shared/Button';
 
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import { create } from '@redux/slices/AlertsSlice';
 
 import type { MeshRefType } from '@ctypes/MeshRefType';
 
 
 import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react';
-import { useAppDispatch } from '@redux/hooks';
-import { create } from '@redux/slices/AlertsSlice';
 
 function Scene() {
     const [scale, setScale] = useState(1.72);

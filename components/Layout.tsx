@@ -4,6 +4,7 @@ import { ReactNode } from 'react';
 import { Nav } from '@components/shared/nav/Nav';
 import { Footer } from '@components/shared/footer/Footer';
 import { Alerts } from '@components/shared/alerts/Alerts';
+import { VoucherModal } from './modals/VoucherModal';
 
 
 interface LayoutProps {
@@ -22,6 +23,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <Footer />
 
             <Alerts />
+            <VoucherModal />
         </div>
     )
 }
