@@ -30,7 +30,7 @@ export const NavItem: React.FC<NavItemProps> = ({ name, path, mobile, handler })
                     >{name}</button>
 
                     <div className={
-                        `${mobile ? 'w-1/4' : 'w-1/3'} 
+                        `${mobile ? 'w-0' : 'w-1/3'} 
                         group-hover:w-2/3 opacity-70 group-hover:opacity-100 h-1 absolute -bottom-1.5 left-0 bg-primary-100 transition-all duration-[180ms] ease-in-out`
                     }></div>
                 </>
