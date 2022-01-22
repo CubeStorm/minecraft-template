@@ -46,9 +46,11 @@ export const InputText: React.FC<InputTextProps> = ({
                 )
             }
 
-            <ErrorMessage name={name}>
-                {error => <span className="text-xs text-red-500 text-right font-bold mt-2">{error}</span>}
-            </ErrorMessage>
+            <div className="">
+                <ErrorMessage name={name}>
+                    {error => <span className="text-xs text-red-500 text-right font-bold mt-2">{error}</span>}
+                </ErrorMessage>
+            </div>
         </div>
     );
 }

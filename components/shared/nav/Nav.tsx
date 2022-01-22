@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useAppSelector } from '@redux/hooks';
+import { useAppDispatch, useAppSelector } from '@redux/hooks';
 
 import { Logo } from '@components/shared/nav/Logo';
 import { Open } from '@components/shared/nav/Open';
@@ -8,10 +8,12 @@ import { MobileNavBar } from '@components/shared/nav/MobileNavBar';
 import { Button } from '@components/shared/Button';
 
 import { RootState } from '@redux/store';
+import { toggleActive } from '@redux/slices/LoginModalSlice';
 
 
 export const Nav: React.FC = () => {
     const { isActive } = useAppSelector((store: RootState) => store.nav);
+    const dispatch = useAppDispatch();
 
     return (
         <nav className="w-full h-16 fixed top-0 left-0 z-40 shadow-sm backdrop-blur-sm">
@@ -29,6 +31,7 @@ export const Nav: React.FC = () => {
                         <Button
                             title="Zaloguj"
                             ariaLabel="Logowanie do konta gracza"
+                            handleClick={() => dispatch(toggleActive(true))}
                         />
                     </div>
 
