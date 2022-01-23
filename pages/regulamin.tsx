@@ -5,6 +5,7 @@ import { Header } from '@components/sections/statute/Header';
 import { Container } from '@components/Container';
 
 import type { NextPage } from 'next';
+import { LastUpdate } from '@components/sections/statute/LastUpdate';
 
 
 const Statute: NextPage = () => {
@@ -55,12 +56,7 @@ const Statute: NextPage = () => {
                     ]}
                 />
 
-                <div className="w-full flex justify-end mt-8">
-                    <div className="flex gap-2 text-text font-bold border-b-4 border-b-primary-100 p-3">
-                        <span>Ostatnia aktualizacja:</span>
-                        <span>10.10.2022</span>
-                    </div>
-                </div>
+                <LastUpdate date="10-10-2022" />
             </Container>
         </div>
     );
