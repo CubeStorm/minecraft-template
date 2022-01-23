@@ -1,48 +1,11 @@
 import * as React from 'react';
-import { useState, useRef } from 'react';
-import { useLoader, useFrame } from '@react-three/fiber'
 import { useAppDispatch } from '@redux/hooks';
 
 import Image from 'next/image';
 import { Button } from '@components/shared/Button';
 
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { create } from '@redux/slices/AlertsSlice';
 
-import type { MeshRefType } from '@ctypes/MeshRefType';
-
-
-import { Canvas } from '@react-three/fiber';
-import { Suspense } from 'react';
-
-function Scene() {
-    const [scale, setScale] = useState(1.72);
-
-    const gltf = useLoader(GLTFLoader, '/img/crying_obsidian.gltf');
-
-    const meshRef = useRef<MeshRefType>(null);
-
-    useFrame(({ clock }) => {
-        if (meshRef.current) {
-            meshRef.current.rotation.z = clock.getElapsedTime() / 3;
-            meshRef.current.rotation.y = clock.getElapsedTime() / 4.5;
-            meshRef.current.rotation.x = clock.getElapsedTime() / 5.30;
-        }
-    });
-
-    const handleReScale = (scale: number) => setScale(scale);
-
-    return (
-        <primitive
-            ref={meshRef}
-            object={gltf.scene}
-            onPointerEnter={() => handleReScale(1.82)}
-            onPointerLeave={() => handleReScale(1.72)}
-            scale={scale}
-            rotation={[Math.PI / 1.54, 0, 2.0]}
-        />
-    )
-}
 
 export const Hero: React.FC = () => {
     const dispatch = useAppDispatch();
@@ -103,13 +66,6 @@ export const Hero: React.FC = () => {
                     data-aos-delay="850"
                     className="lg:w-1/2 flex justify-center"
                 >
-                    {/* <Canvas>
-                        <Suspense fallback={null}>
-                        <ambientLight />
-                        <Scene />
-                        </Suspense>
-                    </Canvas> */}
-
                     <Image
                         src="/img/render.png"
                         alt="Minecraft Render"
