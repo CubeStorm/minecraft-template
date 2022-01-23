@@ -62,7 +62,7 @@ export const Hero: React.FC = () => {
             <div className="flex flex-col lg:flex-row items-center justify-between mt-6 lg:mt-0">
                 <div className="mb-3 lg:max-w-lg lg:pr-5 lg:mb-0">
                     <div className="max-w-xl mb-6">
-                        <div>
+                        <div data-aos="fade-in">
                             <p className="text-xs text-primary-200 font-bold tracking-wide mb-4 px-3 py-px">
                                 WERSJA: 1.18.2
                             </p>
