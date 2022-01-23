@@ -48,7 +48,7 @@ const Layout: React.FC = ({ children }) => {
             <Alerts />
             <VoucherModal />
             <LoginModal />
-        </div >
+        </div>
     )
 }
 
