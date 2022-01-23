@@ -1,0 +1,12 @@
+.statuteHeader:before {
+    content: '\002B';
+    color: #8E05C2;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.statuteContent {
+    padding: 0 18px;
+    overflow: hidden;
+    max-height: 0;
+}

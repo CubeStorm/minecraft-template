@@ -19,7 +19,7 @@ export const Links: React.FC = () => {
             />
 
             <AdditionalLink
-                name="Autor"
+                name="Twórca"
                 path="https://www.mpcforum.pl/topic/1670271-twoja-wlasna-strona-www/"
                 ariaLabel="Przekierowanie do twórcy strony"
                 passHref={true}

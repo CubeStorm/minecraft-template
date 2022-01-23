@@ -22,7 +22,7 @@ export const Item: React.FC<ItemProps> = ({ title, children }) => {
 
                 <svg
                     viewBox="0 0 24 24"
-                    className={`w-3 text-gray-600 transform transition-transform duration-200 ${isActive ? 'rotate-180' : ''}`}
+                    className={`w-3 text-gray-500 transform transition-transform duration-200 ${isActive ? 'rotate-180' : ''}`}
                 >
                     <polyline
                         fill="none"
@@ -38,7 +38,7 @@ export const Item: React.FC<ItemProps> = ({ title, children }) => {
 
             {isActive && (
                 <div className="p-4 pt-0">
-                    <p className="text-gray-700">{children}</p>
+                    <p className="text-gray-500">{children}</p>
                 </div>
             )}
         </div>
