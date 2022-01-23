@@ -51,9 +51,16 @@ const Statute: NextPage = () => {
                     paragraphs={[
                         { id: 10, name: 'Lorem ipsum dolor sit amet consectetur' },
                         { id: 11, name: 'Lorem ipsum dolor sit amet consectetur' },
-                        { id: 12, name: 'Lorem ipsum dolor sit amet consectetur' },
+                        { id: 12, name: 'Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur' },
                     ]}
                 />
+
+                <div className="w-full flex justify-end mt-8">
+                    <div className="flex gap-2 text-text font-bold border-b-4 border-b-primary-100 p-3">
+                        <span>Ostatnia aktualizacja:</span>
+                        <span>10.10.2022</span>
+                    </div>
+                </div>
             </Container>
         </div>
     );
