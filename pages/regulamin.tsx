@@ -51,7 +51,7 @@ const Statute: NextPage = () => {
                     paragraphs={[
                         { id: 10, name: 'Lorem ipsum dolor sit amet consectetur' },
                         { id: 11, name: 'Lorem ipsum dolor sit amet consectetur' },
-                        { id: 12, name: 'Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consectetur' },
+                        { id: 12, name: 'Lorem ipsum dolor sit amet consectetur' },
                     ]}
                 />
 
