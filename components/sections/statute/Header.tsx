@@ -35,7 +35,7 @@ export const Header: React.FC<HeaderProps> = ({ name, paragraphs }) => {
         <div
             data-aos="fade-up"
             data-aos-delay="400"
-            className="flex flex-col"
+            className="flex flex-col mb-2"
         >
             <h5
                 className={styles.statuteHeader + `${isActive ? ' active' : ''} md:text-xl text-gray-100 font-bold uppercase cursor-pointer`}
