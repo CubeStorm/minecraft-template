@@ -19,7 +19,6 @@ export const Nav: React.FC = () => {
         <nav
             data-aos="fade-down"
             data-aos-delay="50"
-            data-aos-once="true"
             className="w-full h-16 fixed top-0 left-0 z-40 shadow-sm backdrop-blur-sm"
         >
             <div className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl mx-auto py-5 px-4 md:px-24 lg:px-8">

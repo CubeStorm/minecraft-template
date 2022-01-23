@@ -17,7 +17,6 @@ export const Team: React.FC = () => {
                 <div
                     data-aos="fade-up"
                     data-aos-delay="100"
-                    data-aos-duration="250"
                     className="lg:max-w-screen-lg grid gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mx-auto"
                 >
                     <Member

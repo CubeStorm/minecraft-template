@@ -32,7 +32,11 @@ export const Header: React.FC<HeaderProps> = ({ name, paragraphs }) => {
     ));
 
     return (
-        <div className="flex flex-col">
+        <div
+            data-aos="fade-up"
+            data-aos-delay="400"
+            className="flex flex-col"
+        >
             <h5
                 className={styles.statuteHeader + `${isActive ? ' active' : ''} md:text-xl text-gray-100 font-bold uppercase cursor-pointer`}
                 onClick={handleToggleActive}

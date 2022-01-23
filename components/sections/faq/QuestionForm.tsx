@@ -25,7 +25,11 @@ export const QuestionForm: React.FC = () => {
                 }}
             >
                 {({ values, handleChange, handleBlur, handleSubmit }) => (
-                    <Form className="w-full flex flex-col items-center gap-3 -mt-10 md:-mt-15 lg:p-4">
+                    <Form
+                        data-aos="fade-up"
+                        data-aos-delay="500"
+                        className="w-full flex flex-col items-center gap-3 -mt-10 md:-mt-15 lg:p-4"
+                    >
                         <div className="w-full flex flex-wrap">
                             <div className="w-1/2 min-w-[250px] p-2">
                                 <InputText
@@ -72,7 +76,11 @@ export const QuestionForm: React.FC = () => {
                 )}
             </Formik>
 
-            <div className="w-full flex flex-col justify-center items-center text-center border-t border-gray-200 py-3">
+            <div
+                data-aos="fade-up"
+                data-aos-delay="650"
+                className="w-full flex flex-col justify-center items-center text-center border-t border-gray-200 py-3"
+            >
                 <span className="text-sm text-text">Wiadomość wysyłasz na adres</span>
 
                 <a

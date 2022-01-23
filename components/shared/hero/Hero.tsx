@@ -87,8 +87,7 @@ export const Hero: React.FC = () => {
 
                     <div
                         data-aos="zoom-in-right"
-                        data-aos-delay="650"
-                        data-aos-duration="250"
+                        data-aos-delay="850"
                         className="flex flex-col items-center md:flex-row"
                     >
                         <Button
@@ -101,8 +100,7 @@ export const Hero: React.FC = () => {
 
                 <div
                     data-aos="zoom-in-left"
-                    data-aos-delay="650"
-                    data-aos-duration="250"
+                    data-aos-delay="850"
                     className="lg:w-1/2 flex justify-center"
                 >
                     {/* <Canvas>

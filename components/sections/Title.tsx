@@ -10,8 +10,7 @@ export const Title: React.FC<TitleProps> = ({ title, description }) => {
     return (
         <div
             data-aos="fade-up"
-            data-aos-delay="100"
-            data-aos-duration="250"
+            data-aos-delay="300"
             className="max-w-xl lg:max-w-2xl text-center mb-12 md:mx-auto"
         >
             <h3 className="max-w-lg text-3xl sm:text-4xl text-text font-bold tracking-tight mb-4 md:mx-auto">

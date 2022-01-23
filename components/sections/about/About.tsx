@@ -23,7 +23,6 @@ export const About: React.FC = () => {
                         <div
                             data-aos="fade-right"
                             data-aos-delay="250"
-                            data-aos-duration="250"
                             className="lg:w-1/2 flex justify-center items-center mb-6 lg:mb-0"
                         >
                             <Image
@@ -45,7 +44,6 @@ export const About: React.FC = () => {
                         <div
                             data-aos="fade-left"
                             data-aos-delay="250"
-                            data-aos-duration="250"
                             className="lg:w-1/2 flex justify-center relative"
                         >
                             <p className="max-w-[500px] md:text-lg text-text text-center">
