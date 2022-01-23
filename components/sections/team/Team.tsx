@@ -14,7 +14,12 @@ export const Team: React.FC = () => {
                     description="Jeśli potrzebujesz pomocy lub czujesz potrzebę, aby nam o czymś powiedzieć nie wahaj się! Kliknij w główkę wybranego administratora, aby się z nim skontaktować"
                 />
 
-                <div className="lg:max-w-screen-lg grid gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mx-auto">
+                <div
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    data-aos-duration="250"
+                    className="lg:max-w-screen-lg grid gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mx-auto"
+                >
                     <Member
                         name="Jan Kowalski"
                         nick="CubeStorm"

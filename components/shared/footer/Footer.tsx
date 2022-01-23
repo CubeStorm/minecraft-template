@@ -12,8 +12,13 @@ export const Footer: React.FC = () => {
     const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME;
 
     return (
-        <footer className={`w-full bg-background mx-auto pt-16 px-4 md:px-24 lg:px-8`}>
-            <div className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+        <footer
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="250"
+            className={`w-full bg-background mx-auto pt-16 px-4 md:px-24 lg:px-8`}
+        >
+            <div className="sm:max-w-xl md:max-w-full lg:max-w-screen-xl grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4" >
                 <div className="sm:col-span-2">
                     <Link href="/">
                         <a

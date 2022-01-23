@@ -18,7 +18,9 @@ import '@styles/button.css';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
     useEffect(() => {
-        AOS.init();
+        AOS.init({
+            duration: 800
+        });
     });
 
     return (

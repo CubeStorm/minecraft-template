@@ -7,7 +7,7 @@ export default class MyDocument extends Document {
             <Html lang="pl">
                 <Head />
 
-                <body className="scrollbar-thin scrollbar-thumb-primary-100">
+                <body className="bg-background scrollbar-thin scrollbar-thumb-primary-100">
                     <Main />
                     <NextScript />
                 </body>

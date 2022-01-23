@@ -20,7 +20,12 @@ export const About: React.FC = () => {
                     />
 
                     <div className="flex flex-col lg:flex-row lg:items-center">
-                        <div className="lg:w-1/2 flex justify-center items-center mb-6 lg:mb-0">
+                        <div
+                            data-aos="fade-right"
+                            data-aos-delay="250"
+                            data-aos-duration="250"
+                            className="lg:w-1/2 flex justify-center items-center mb-6 lg:mb-0"
+                        >
                             <Image
                                 src="/img/bee_in_enderchest.png"
                                 width={280}
@@ -37,7 +42,12 @@ export const About: React.FC = () => {
                             </div>
                         </div>
 
-                        <div className="lg:w-1/2 flex justify-center relative">
+                        <div
+                            data-aos="fade-left"
+                            data-aos-delay="250"
+                            data-aos-duration="250"
+                            className="lg:w-1/2 flex justify-center relative"
+                        >
                             <p className="max-w-[500px] md:text-lg text-text text-center">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                                 accusantium doloremque rem aperiam, eaque ipsa quae. Lorem ipsum
