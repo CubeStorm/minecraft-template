@@ -16,7 +16,12 @@ export const Ranking: React.FC = () => {
                 />
 
                 <div className="grid gap-10 lg:grid-cols-2">
-                    <div className="lg:pr-32">
+                    <div
+                        data-aos="fade-right"
+                        data-aos-delay="850"
+                        className="lg:pr-32"
+                    >
+
                         <div className="w-full flex flex-col items-center gap-y-2 relative z-10">
                             <Player i={1} name="CubeStorm" points={10000} />
                             <Player i={2} name="CubeStorm" points={10000} />
@@ -27,7 +32,7 @@ export const Ranking: React.FC = () => {
                             <Player i={6} name="CubeStorm" points={10000} />
                             <Player i={7} name="CubeStorm" points={10000} />
                             <Player i={8} name="CubeStorm" points={10000} />
-                            <Player i={10} name="CubeStorm" points={10000} />
+                            <Player i={10} name="MichałPierdzidu" points={10000} />
                         </div>
                     </div>
 

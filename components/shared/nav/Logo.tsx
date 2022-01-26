@@ -25,7 +25,7 @@ export const Logo: React.FC = () => {
                     </Canvas>
                 </div>
 
-                <h1 className="text-xl text-text font-bold tracking-wide uppercase ml-2">
+                <h1 className="text:base md:text-lg lg:text-xl text-text font-bold tracking-wide uppercase ml-2">
                     {APP_NAME}
                 </h1>
             </a>
