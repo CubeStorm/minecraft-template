@@ -1,8 +1,9 @@
 import * as React from 'react';
 
-import { About } from '@components/sections/about/About';
-import { Team } from '@components/sections/team/Team';
 import { Hero } from '@components/shared/hero/Hero';
+import { About } from '@components/sections/about/About';
+import { Ranking } from '@components/sections/ranking/Ranking';
+import { Team } from '@components/sections/team/Team';
 
 import type { NextPage } from 'next';
 
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
             <Hero />
 
             <About />
+            <Ranking />
             <Team />
         </div>
     )

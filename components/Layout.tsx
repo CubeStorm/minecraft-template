@@ -9,10 +9,10 @@ import { LoginModal } from '@components/modals/LoginModal';
 
 const Layout: React.FC = ({ children }) => {
     return (
-        <div className="min-h-screen relative bg-background" >
+        <div className="min-h-screen relative bg-background">
             <Nav />
 
-            <main className="w-full pt-16">
+            <main className="w-full pt-20">
                 {children}
             </main>
 
