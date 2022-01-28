@@ -37,7 +37,7 @@ export const Hero: React.FC = () => {
 
                         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-text sm:text-4xl sm:leading-none">
                             Dołącz do nas
-                            <br className="hidden md:block" />
+                            <br />
                             i baw się razem z nami
                         </h2>
 
