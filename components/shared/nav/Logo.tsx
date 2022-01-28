@@ -1,8 +1,8 @@
 import * as React from 'react';
 
+import { Suspense } from 'react';
 import Link from 'next/link';
 import { Canvas } from '@react-three/fiber';
-import { Suspense } from 'react';
 import { LogoBlock } from '@components/shared/nav/LogoBlock';
 
 

@@ -21,38 +21,29 @@ export const NavItem: React.FC<NavItemProps> = ({ name, path, mobile, handler })
     return (
         <li className="relative group">
             {handler ? (
-                <>
-                    <button
+                <button
+                    aria-label={name}
+                    title={name}
+                    className="text-gray-100 font-medium tracking-wide"
+                    onClick={handler}
+                >{name}</button>
+            ) : (
+                <Link href={path}>
+                    <a
                         aria-label={name}
                         title={name}
                         className="text-gray-100 font-medium tracking-wide"
-                        onClick={handler}
-                    >{name}</button>
+                        onClick={() => dispatch(toggleActive(false))}
+                    > {name} </a>
+                </Link>
+            )}
 
-                    <div className={
-                        `${mobile ? 'w-0' : 'w-1/3'} 
-                        group-hover:w-2/3 opacity-70 group-hover:opacity-100 h-1 absolute -bottom-1.5 left-0 bg-primary-100 transition-all duration-[180ms] ease-in-out`
-                    }></div>
-                </>
-            ) : (
-                <>
-                    <Link href={path}>
-                        <a
-                            aria-label={name}
-                            title={name}
-                            className="text-gray-100 font-medium tracking-wide"
-                            onClick={() => dispatch(toggleActive(false))}
-                        > {name} </a>
-                    </Link>
-
-                    <div className={`w-1/4 ${(path === route)
-                        ? `${mobile ? 'w-1/3' : 'w-2/3'}`
-                        : `${mobile ? 'w-0' : 'group-hover:w-2/3'} opacity-70 group-hover:opacity-100`}
-                        h-1 absolute -bottom-1.5 left-0 bg-primary-100 transition-all duration-[180ms] ease-in-out`}>
-                    </div>
-                </>
-            )
-            }
-        </li >
+            <div className={`${(path === route)
+                ? `${mobile ? 'w-[60px]' : 'w-[40px]'}`
+                : `${mobile ? 'w-0' : 'w-[10px] group-hover:w-[40px]'} opacity-70 group-hover:opacity-100`}
+                    h-1 absolute -bottom-1.5 left-0 bg-primary-100 transition-all duration-[180ms] ease-out`}
+            >
+            </div>
+        </li>
     );
 }
