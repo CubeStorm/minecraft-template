@@ -11,12 +11,17 @@ interface NavItemProps {
     name: string,
     path: string,
     mobile: boolean,
-    handler?: (arg: any) => void
+    handler?: (arg?: any) => void
 }
 
 export const NavItem: React.FC<NavItemProps> = ({ name, path, mobile, handler }) => {
     const { route } = useRouter();
     const dispatch = useAppDispatch();
+
+    const handleClick = () => {
+        handler && handler();
+        mobile && toggleActive(false);
+    }
 
     return (
         <li className="relative group">
@@ -25,7 +30,7 @@ export const NavItem: React.FC<NavItemProps> = ({ name, path, mobile, handler })
                     aria-label={name}
                     title={name}
                     className="text-gray-100 font-medium tracking-wide"
-                    onClick={handler}
+                    onClick={handleClick}
                 >{name}</button>
             ) : (
                 <Link href={path}>
