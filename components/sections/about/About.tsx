@@ -33,9 +33,9 @@ export const About: React.FC = () => {
                             />
 
                             <div>
-                                <h5 className="text-2xl font-extrabold sm:text-3xl xl:text-4xl text-text">
+                                <p className="text-2xl sm:text-3xl xl:text-4xl text-text font-extrabold m-0">
                                     9 312 435
-                                </h5>
+                                </p>
 
                                 <small className="text-sm text-gray-500 font-bold">Zarejestrowanych graczy</small>
                             </div>
