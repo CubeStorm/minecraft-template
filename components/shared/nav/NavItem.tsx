@@ -20,7 +20,7 @@ export const NavItem: React.FC<NavItemProps> = ({ name, path, mobile, handler })
 
     const handleClick = () => {
         handler && handler();
-        mobile && toggleActive(false);
+        mobile && dispatch(toggleActive(false));
     }
 
     return (
