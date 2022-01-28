@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
                     <div
                         data-aos="zoom-in-right"
                         data-aos-delay="850"
-                        className="flex flex-col items-center md:flex-row"
+                        className="flex items-center"
                     >
                         <Button
                             title="Skupiuj Adres IP"
