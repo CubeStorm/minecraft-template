@@ -13,6 +13,12 @@ import { toggleActive as toggleActiveLoginModal } from '@redux/slices/LoginModal
 export const MobileNavBar: React.FC = () => {
     const dispatch = useAppDispatch();
 
+    const handleShowLoginModal = () => {
+        dispatch(toggleActiveLoginModal(true))
+        dispatch(toggleActive(false));
+    }
+
+
     return (
         <div
             className="w-full h-screen fixed top-0 left-0 bg-backgroundOverlay p-3"
@@ -40,7 +46,7 @@ export const MobileNavBar: React.FC = () => {
                             title="Zaloguj"
                             ariaLabel="Logowanie do konta gracza"
                             styles="min-w-full mt-5"
-                            handleClick={() => dispatch(toggleActiveLoginModal(true))}
+                            handleClick={handleShowLoginModal}
                         />
                     </li>
                 </ul>
