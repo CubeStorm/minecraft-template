@@ -67,7 +67,7 @@ export const Hero: React.FC = () => {
                     className="lg:w-1/2 flex justify-center"
                 >
                     <Image
-                        src="/img/render.png"
+                        src="/img/purple_render.png"
                         alt="Minecraft Render"
                         width={520}
                         height={520}

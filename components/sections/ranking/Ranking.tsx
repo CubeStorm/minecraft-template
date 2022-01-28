@@ -1,14 +1,14 @@
 import * as React from 'react';
 
+import Image from 'next/image';
 import { Container } from '@components/Container';
 import { Player } from '@components/sections/ranking/Player';
 import { Title } from '@components/sections/Title';
-import Image from 'next/image';
 
 
 export const Ranking: React.FC = () => {
     return (
-        <div className="w-full my-10 md:my-6 lg:my-2">
+        <section className="w-full relative my-10 md:my-6 lg:my-2">
             <Container>
                 <Title
                     title="Najlepsi z Najlepszych"
@@ -32,7 +32,7 @@ export const Ranking: React.FC = () => {
                             <Player i={6} name="CubeStorm" points={10000} />
                             <Player i={7} name="CubeStorm" points={10000} />
                             <Player i={8} name="CubeStorm" points={10000} />
-                            <Player i={10} name="MichałPierdzidu" points={10000} />
+                            <Player i={10} name="CubeStorm" points={10000} />
                         </div>
                     </div>
 
@@ -51,7 +51,7 @@ export const Ranking: React.FC = () => {
                         />
                     </div>
                 </div>
-            </Container >
-        </div >
+            </Container>
+        </section>
     );
 }
