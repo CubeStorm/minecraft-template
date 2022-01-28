@@ -53,10 +53,11 @@ export const About: React.FC = () => {
                                 incididunt ut labore et dolore magna aliqua.
                             </p>
 
-                            <div className="w-[120px] h-[120px] absolute -bottom-20 md:top-full right-0 z-10">
+                            <div className="hidden lg:block absolute -bottom-20 md:top-full right-0 z-10">
                                 <Image
                                     src="/img/endermite.png"
-                                    layout="fill"
+                                    width={120}
+                                    height={120}
                                     alt="Endermite"
                                 />
                             </div>
