@@ -10,7 +10,7 @@ const Faq: NextPage = () => {
     return (
         <div className="w-full min-h-screen">
             <Head>
-                <title>{process.env.NEXT_PUBLIC_APP_NAME} ● Faq</title>
+                <title>{process.env.NEXT_PUBLIC_APP_NAME} ● Faqq</title>
             </Head>
 
             <FaqSection />
